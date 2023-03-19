@@ -1,10 +1,24 @@
-package kraftiworks;
-use Dancer2;
+package kraftiworks {
+    use strictures;
+    use English;
+    use utf8;
 
-our $VERSION = '0.1';
+    use FindBin;
+    use lib "$FindBin::Bin/../lib";
 
-get '/' => sub {
-    template 'index' => { 'title' => 'kraftiworks' };
-};
+    use feature ":5.36";
 
-true;
+    use boolean qw(:all);
+    use Return::Type;
+    use Types::Standard -all;
+
+    use Dancer2;
+
+    our $VERSION = '0.1';
+
+    get '/' => sub {
+        template 'index' => { 'title' => 'kraftiworks' };
+    };
+
+    true;
+}
