@@ -33,3 +33,7 @@ inc/
 /MANIFEST.bak
 /pm_to_blib
 /*.zip
+
+# don't allow user data into the repo
+/config/db/*.db
+/config/json/*.json

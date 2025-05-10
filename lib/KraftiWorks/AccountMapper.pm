@@ -36,7 +36,7 @@ package KraftiWorks::AccountMapper {
         my $fh = undef;
         try {
             # find and open json file that contains the account information
-            my $file = "$FindBin::Bin/../databackend/json/${user}.json";
+            my $file = "$FindBin::Bin/../config/databackend/json/${user}.json";
             open $fh, '<', $file or die "Could not open file '$file' $!";
         } catch ($e) {
             say STDERR "Error: $e";

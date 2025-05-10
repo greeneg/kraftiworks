@@ -80,9 +80,6 @@ package KraftiWorks::ImapClient {
         say STDERR "Port: $self->{port}";
         $self->{imap} = Net::IMAP::SimpleX->new($self->{server}, port => $self->{port}, use_ssl => 1);
 
-        # dump our returned object
-        say STDERR "IMAP object: ", Dumper($self->{imap});
-
         # Check if the connection was successful
         if (!$self->{imap}) {
             say STDERR "Failed to connect to IMAP server:" . $Net::IMAP::Simple::errstr;
@@ -212,10 +209,7 @@ package KraftiWorks::ImapClient {
             print $msg_in_reply_to;
             print $msg_references;
             say "UID: ", $msg_uid;
-            my $subject = $msg_subject;
-            $subject =~ s/\n//g;
-            $subject =~ s/\r//g;
-            $subject = rfc2047_decode($subject);
+            my $subject = rfc2047_decode($msg_subject);
             say $subject;
             say "----------------------------------------";
         }
