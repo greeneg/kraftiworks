@@ -20,9 +20,9 @@ package main {
     use KraftiWorks::ImapClient;
 
     my $imap_client = KraftiWorks::ImapClient->new(
-        server   => 'imap.gmail.com',
+        server   => $ENV{KRAFTIWORKS_IMAP_SERVER},
         port     => 993,
-        username => 'greeneg@tolharadys.net',
+        username => $ENV{KRAFTIWORKS_USERNAME},
         password => '',
     );
     my $connected = $imap_client->connect();
@@ -38,8 +38,8 @@ package main {
     }
     say "Selecting INBOX";
     my $selected = $imap_client->select_folder('INBOX');
-    say "Getting the first 10 messages";
-    my $messages = $imap_client->get_msg_range(($selected - 20), $selected);
+    say "Getting the first 100 messages";
+    my $messages = $imap_client->get_msg_range(($selected - 100), $selected);
 #    for (my $i = $selected; $i > 0; $i--) {
 #        if (! $imap_client->msg_attribute($i, 'read')) {
 #            print "* ";

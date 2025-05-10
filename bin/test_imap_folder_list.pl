@@ -21,7 +21,7 @@ package main {
     my $imap_client = KraftiWorks::ImapClient->new(
         server   => 'imap.gmail.com',
         port     => 993,
-        username => 'greeneg@tolharadys.net',
+        username => $ENV{KRAFTIWORKS_USERNAME},
         password => '',
     );
     my $connected = $imap_client->connect();
