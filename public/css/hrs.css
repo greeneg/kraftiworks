@@ -1,0 +1,294 @@
+
+body {
+  background-color: white;
+  color: black;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+p {
+  color: black;
+  font-family: verdana, sans-serif;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+  color: #3366ff;
+  font-family: Verdana, sans-serif;
+  font-variant: small-caps;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18pt;
+}
+
+h2 {
+  margin-left: -0.5in;
+}
+h3 {
+  margin-left: -0.25in;
+}
+h4 {
+  margin-left: -0.125in;
+}
+*/
+
+h2 {
+  color: #3366ff;
+  font-family: verdana, sans-serif;
+  font-variant: small-caps;
+}
+hr {
+  margin-left: -1in;
+  color: blue;
+  background-color: darkblue;
+  height: 1px;
+  border: none;
+}
+
+/* Definition lists: definition term bold */
+dt {
+  font-weight: bold;
+}
+
+/* Use the <code> tag for bits of code and <var> for variables and objects. */
+code,pre,samp,var {
+  color: #C0FFC0;
+  font-family: monospace;
+}
+
+/* make sure the text wraps; otherwise, we get ugly ugly scrollbars for
+ * pre-formatted text. This works in most browsers (listed below).
+ */
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* Use the <file> tag for file and directory paths and names. */
+file {
+  color: #905050;
+  font-family: monospace;
+}
+/* Use the <kbd> tag for stuff the user should type. */
+kbd {
+  color: #600000;
+  font-family: monospace;
+}
+
+div.toplogo {
+  float: left;
+  margin-left: 3mm;
+  margin-top: 3mm;
+}
+img.toplogo {
+  width: 209px;
+  height: 50px;
+}
+div.topsearch {
+  float: left;
+  font-family: verdana, sans-serif;
+  font-size: 10px;
+  color: grey;
+  margin-left: 3mm;
+  margin-top: 4mm;
+  text-align: right;
+}
+input.topsearch {
+  font-family: verdana, sans-serif;
+  font-weight: bold;
+  color: grey;
+  height: 17px;
+}
+div.toptypemenu {
+  float: left;
+  font-family: verdana, sans-serif;
+  font-size: small;
+  margin-top: 5mm;
+}
+div.footer {
+  float: relative;
+  font-family: verdana, sans-serif;
+  font-size: smaller;
+  text-align: center;
+}
+
+div.contacts {
+  font-family: Georgia, sans-serif;
+  text-decoration: none;
+}
+div.date {
+  font-family: Georgia, serif;
+  font-style: italic;
+  text-align: right;
+}
+div.disclaimer {
+  font-family: Georgia, serif;
+  font-style: italic;
+  float: right;
+  border: 2px none;
+  margin-right: 0%;
+  padding: 1px;
+  width: 3in;
+}
+div.navbar {
+  font-family: Georgia, serif;
+}
+div.navtabs {
+  margin-right: 0%;
+  padding: 3px;
+  cursor: pointer;
+}
+div.note {
+  -moz-border-radius: 12px 12px 12px 12px;
+  background-color: #fffff0;
+  border: 2px solid #6060a0;
+  float: right;
+  margin-right: 0%;
+  padding: 1px;
+  width: 3in;
+}
+div.searchbox {
+  text-align: right;
+  border-style: none;
+}
+div.tabselected {
+  float: left;
+  background-color: white;
+  color: black;
+  font-family: Georgia, serif;
+  border: 3px solid #000080;
+  font-weight: bold;
+  padding: 3px;
+  text-align: center;
+  width: 15%;
+}
+div.tabother {
+  float: left;
+  font-family: Georgia, serif;
+  border: 3px solid #000080;
+  background-color: #000080;
+  padding: 3px;
+  text-align: center;
+  color: #ffffff;
+  width: 15%;
+}
+
+img {
+  border: 0;
+}
+
+img.userimage {
+  float: left;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  border: 0;
+}
+
+ul.nobullets {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+li {
+  font-family: Georgia, serif;
+  list-style-type: square;
+}
+
+/*
+body:after {
+ font-family: Georgia, serif;
+ color: #800000;
+  content: "Copyright YggdrasilSoft, LLC";
+}
+*/
+
+address {
+ font-family: Georgia, serif;
+ color: maroon;
+ text-align: right;
+}
+
+table {
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.dsply_table {
+  table-layout=fixed;
+  border-color: white;
+  border: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.dsply_contacts_table {
+  table-layout=fixed;
+  border-style: solid;
+  border-color: blue;
+  width: 100%;
+  margin: 0px;
+  padding: 1px;
+}
+
+tr.dsply_row {
+    alignment: center;
+}
+tr.dsply_contact_row {
+    alignment: center;
+}
+
+td.dsply_person_cell {
+  width: 16.66%;
+  border: 0;  
+}
+
+td.dsply_contact_cell {
+  text-align: left;
+}
+
+td {
+  font-family: Georgia, serif;
+  border: 1px groove white;
+  vertical-align: top;
+  padding: 0px;
+}
+
+/* pretty printing styles.  See prettify.js */
+.str { color: #080; }
+.kwd { color: #008; }
+.com { color: #800; }
+.typ { color: #606; }
+.lit { color: #066; }
+.pun { color: #660; }
+.pln { color: #000; }
+.tag { color: #008; }
+.atn { color: #606; }
+.atv { color: #080; }
+pre.prettyprint { padding: 2px; border: 1px solid #888; }
+
+.embsrc { background: #eee; }
+
+/* Table Column Headers */
+.hdr {
+  color: #006;
+  font-weight: bold;
+  background-color: #dddddd; }
+.hdr2 {
+  color: #006;
+  background-color: #eeeeee; }
+
+/* Only need this if you use */
+/* js/gototop.js */
+.navtop {font-size: xx-small; float:right;}
